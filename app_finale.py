@@ -127,6 +127,7 @@ hr { border-color: #1a1a2e !important; }
 # ============================================
 # RÉSOLUTION DE LA CLÉ API GROQ  (logique inchangée)
 # ============================================
+api_key = st.secrets["GROK_API_KEY"]
 def get_api_key() -> str | None:
     try:
         if st.secrets.get("GROQ_API_KEY"):
